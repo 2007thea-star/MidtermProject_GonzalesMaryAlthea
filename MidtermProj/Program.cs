@@ -348,7 +348,7 @@ namespace StudentSystem
                     }
 
                     List<string> studentList = new List<string>(File.ReadAllLines(filePath));
-                    bool found = false; // 
+                    bool found = false; 
 
                     foreach (string line in studentList)
                     {
@@ -359,7 +359,7 @@ namespace StudentSystem
 
                         if (p[0].Equals(searchName, StringComparison.OrdinalIgnoreCase))
                         {
-                            found = true; // 2. Mark as found
+                            found = true; 
                             Console.WriteLine($"\nName: {p[0]}, {p[1]}");
                             Console.WriteLine($"Course/Year: {p[7]} - {p[8]}");
                             Console.WriteLine("------------------------------");
